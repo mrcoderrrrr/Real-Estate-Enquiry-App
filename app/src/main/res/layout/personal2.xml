@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnquiryFrom.personal_2">
+    <TextView
+        android:id="@+id/personaltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="PERSONAL DETAILS"
+        android:textColor="@color/button_color"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender :"
+        android:textSize="15sp"
+        android:layout_below="@+id/personaltxt"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:id="@+id/gendertxt"
+        android:textColor="@color/button_color"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genderval"
+        android:layout_below="@id/gendertxt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/male"
+            android:buttonTint="@color/button_color"
+            android:text="Male"
+            android:textColor="@color/black"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/female"
+            android:buttonTint="@color/button_color"
+            android:text="Female"
+            android:textColor="@color/black"
+            />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textSize="15sp"
+        android:layout_below="@+id/genderval"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:id="@+id/statustxt"
+        android:textColor="@color/button_color"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusval"
+        android:layout_below="@id/statustxt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/married"
+            android:text="Married"
+            android:buttonTint="@color/button_color"
+            android:textColor="@color/black"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/unmarried"
+            android:text="Unmarried"
+            android:buttonTint="@color/button_color"
+            android:textColor="@color/black"
+            />
+
+    </RadioGroup>
+
+            <TextView
+                android:id="@+id/Occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statusval"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Occupation"
+                android:textColor="@color/button_color"
+                android:textSize="15sp" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/Occupation"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/CompanyLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_location_city_24"
+                app:boxStrokeColor="@color/button_color"
+                android:textColorHint="@color/black"
+                app:helperTextTextColor="@color/button_color"
+                app:boxStrokeErrorColor="@color/error_color"
+                app:errorTextColor="@color/error_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/CompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name Of Company" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/DesLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CompanyLayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="@color/button_color"
+                android:textColorHint="@color/black"
+                app:helperTextTextColor="@color/button_color"
+                app:boxStrokeErrorColor="@color/error_color"
+                app:errorTextColor="@color/error_color"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_work_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Designation" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/WorkLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DesLayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="@color/button_color"
+                android:textColorHint="@color/black"
+                app:helperTextTextColor="@color/button_color"
+                app:boxStrokeErrorColor="@color/error_color"
+                app:errorTextColor="@color/error_color"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_work_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/worknature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nature Of Work" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/BusinessLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WorkLayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:boxStrokeColor="@color/button_color"
+                android:textColorHint="@color/black"
+                app:helperTextTextColor="@color/button_color"
+                app:boxStrokeErrorColor="@color/error_color"
+                app:errorTextColor="@color/error_color"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/busiloc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Business Location" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/preLay"
+        android:layout_width="210dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/button_color">
+
+        <TextView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="20dp"
+            android:text="PREVIOUS"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="210dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/preLay"
+        android:background="@color/button_color">
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="20dp"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

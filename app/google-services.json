@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "412078649100",
+    "project_id": "sales-enquiry-3e62c",
+    "storage_bucket": "sales-enquiry-3e62c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412078649100:android:134c48d238209a18c82329",
+        "android_client_info": {
+          "package_name": "com.example.salesenquiry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412078649100-in8l8lvom6h7stjpdha2neug5at1sgrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkVAP_hJdsMQ3RO7lkHtryMSqIheOIqjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412078649100-in8l8lvom6h7stjpdha2neug5at1sgrd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

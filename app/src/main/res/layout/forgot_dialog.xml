@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/white"
+        android:id="@+id/forgetCard"
+        android:elevation="40dp"
+        app:cardCornerRadius="30dp"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FORGET PASSWORD"
+            android:id="@+id/forgettxt"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/button_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+           android:layout_centerHorizontal="true"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Register Email id"
+        android:id="@+id/txt"
+        android:layout_below="@+id/forgettxt"
+        android:textColor="@color/grey"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/emailenter"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Email Id "
+        android:padding="10dp"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:shadowRadius="@integer/config_navAnimTime"
+        android:layout_below="@id/emailenter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/emailsubmit"
+        android:text="Submit"
+        android:backgroundTint="@color/button_color"
+        android:textSize="15sp"
+        />
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

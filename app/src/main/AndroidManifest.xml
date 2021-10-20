@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.salesenquiry">
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kenarc_symbol"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/kenarc_symbol"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SalesEnquiry"
+        android:usesCleartextTraffic="true"
+        >
+        <activity android:name=".EnquiryFrom.View_form"></activity>
+        <activity android:name=".EnquiryFrom.view_form_data" />
+        <activity android:name=".forgot_password" />
+        <activity android:name=".EnquiryFrom.about_project" />
+        <activity android:name=".EnquiryFrom.need_require" />
+        <activity android:name=".EnquiryFrom.personal_2" />
+        <activity android:name=".EnquiryFrom.personal" />
+        <activity android:name=".login" />
+        <activity android:name=".register" />
+        <activity android:name=".welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+</manifest>

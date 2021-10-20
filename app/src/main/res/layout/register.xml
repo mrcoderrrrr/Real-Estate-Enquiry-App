@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/passwordInput"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/button_color"
+        android:paddingBottom="10dp"
+        android:text="Sign Up" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/kenarc_symbol"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/logoIcon"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:src="@drawable/kenarc_text"
+        android:layout_marginTop="10dp"
+        android:id="@+id/logotxt"
+        android:layout_below="@+id/logoIcon"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/haveac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="30dp"
+        android:text="Already have any account?" />
+
+    <TextView
+        android:id="@+id/loginac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@+id/haveac"
+        android:text="Log In"
+        android:textSize="15sp"
+        android:textColor="@color/button_color"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logotxt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        app:hintTextColor="@color/button_color"
+        app:boxStrokeColor="@color/button_color"
+        android:textColorHint="@color/button_color"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Fullname"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameInput"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        app:hintTextColor="@color/button_color"
+        app:boxStrokeColor="@color/button_color"
+        android:textColorHint="@color/button_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailtxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailInput"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/button_color"
+        app:boxStrokeColor="@color/button_color"
+        android:textColorHint="@color/button_color"
+        app:endIconCheckable="true"
+        app:endIconMode="password_toggle"
+    >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordtxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

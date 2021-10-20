@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/kenarc_symbol"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/logoIcon"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:src="@drawable/kenarc_text"
+        android:layout_marginTop="10dp"
+        android:id="@+id/logotxt"
+        android:layout_below="@+id/logoIcon"
+        android:layout_centerHorizontal="true"
+        />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/emailInput"
+    android:layout_below="@+id/logotxt"
+    android:layout_marginTop="15dp"
+    android:layout_centerInParent="true"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:hint="Email"
+    app:hintTextColor="@color/button_color"
+    app:boxStrokeColor="@color/button_color"
+    android:textColorHint="@color/button_color"
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/emailtxt"
+        android:inputType="textEmailAddress"
+        android:textCursorDrawable="@color/red"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordInput"
+        android:layout_below="@+id/emailInput"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Password"
+        app:endIconCheckable="true"
+        app:endIconMode="password_toggle"
+      app:boxStrokeColor="@color/button_color"
+        app:hintTextColor="@color/button_color"
+        android:textColorHint="@color/button_color"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/passwordtxt"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@color/red"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/passwordInput"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/login"
+        android:backgroundTint="@color/button_color"
+        android:text="Log In"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_below="@+id/login"
+        android:id="@+id/forgot"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/button_color"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have any account?"
+        android:id="@+id/donthave"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="110dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/button_color"
+        android:id="@+id/signupac"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/donthave"
+        />
+</RelativeLayout>
